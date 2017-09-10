@@ -22,6 +22,7 @@ unzip $1 boot.img
 ./unpackimg.sh boot.img
 sed -i 's/ro.secure=.*/ro.secure=0/' ramdisk/default.prop
 sed -i 's/ro.adb.secure=.*/ro.adb.secure=0/' ramdisk/default.prop
+sed -i 's/ro.debuggable=.*/ro.debuggable=1/' ramdisk/default.prop
 ./repackimg.sh
 mv image-new.img boot.img
 popd
