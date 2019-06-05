@@ -10,7 +10,7 @@ The script ./adb\_insecure.sh can patch any android ROM kernel in order to enabl
 
 Then you will get a boot.img file that you can flash with `fastboot flash boot boot.img` in bootloader mode.
 
-# For Xiaomi.eu ROMS
+# For Xiaomi.eu ROMS (and other Treble ROMs)
 On Xioami.eu ROMS the ramdisk/default.prop is a symlink to /system/etc/prop.default.  
 You can if you want take that /system/etc/prop.default and overwrite the ramdisk/default.prop.  
 The script right now is simply overwriting the ramdisk/default.prop with a default one.
